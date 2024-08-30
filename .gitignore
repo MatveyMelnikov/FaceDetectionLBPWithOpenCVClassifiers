@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+build.
+*.egg-info/
+*.egg
+dataset_faces/
+dataset_nonfaces/
+training_data/faces/test/results/
+training_data/faces/test/default_tests
