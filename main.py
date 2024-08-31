@@ -16,7 +16,7 @@ def main():
 
     images = load_images(pos_testing_path)
     greyscale_images = convert_images_to_greyscale(images)
-    face_detector = FaceDetector("classifiers/lbpcascade_frontalface_improved.xml")
+    face_detector = FaceDetector("classifiers/lbpcascade_frontalface.xml")
 
     for image_index in range(0, len(greyscale_images)):
         print(f"Image: {image_index}")
