@@ -6,6 +6,7 @@ from Stage import Stage
 
 class OpenCVClassifierParser:
     def __init__(self, path):
+        self.feature_size = None
         self.features = None
         self.stages = None
         self.root = None
@@ -17,6 +18,7 @@ class OpenCVClassifierParser:
         self.root = self.classifiers_file.getroot()  # opencv_storage
         self.stages = self.root.find(".//stages")
         self.features = self.root.find(".//features")  # rects
+        self.feature_size = int(self.root.find(".//height").text)
 
         for stage in self.stages:
             current_stages.append(self.parse_stages(stage))

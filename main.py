@@ -6,8 +6,6 @@ from PIL import Image
 
 
 def main():
-    # test()
-
     pos_training_path = 'training_data/faces'
     neg_training_path = 'training_data/nonfaces'
     pos_testing_path = 'training_data/faces/test'
