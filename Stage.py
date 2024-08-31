@@ -14,4 +14,4 @@ class Stage:
         for classifier in self.classifiers:
             score += classifier.get_vote(integral_image, offset, scale_index)
 
-        return True if score > self.threshold else False
+        return True if score >= self.threshold else False

@@ -20,7 +20,7 @@ def main():
 
     for image_index in range(0, len(greyscale_images)):
         print(f"Image: {image_index}")
-        faces = face_detector.detect(greyscale_images[image_index], 1.0, 1.1, 0.1, 1)
+        faces = face_detector.detect(greyscale_images[image_index], 1.0, 1.1, 0.1, 3)
         image = Image.fromarray(images[image_index])
 
         for face in faces:
