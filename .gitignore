@@ -5,7 +5,11 @@ build.
 *.egg
 dataset_faces/
 dataset_nonfaces/
+training_data/faces/test/*
 training_data/faces/test/results/*
 training_data/faces/test/default_tests
+!training_data/faces/test/results/
+training_data/nonfaces/test/*
 training_data/nonfaces/test/results/*
 training_data/nonfaces/test/default_tests/*
+!training_data/nonfaces/test/results/
