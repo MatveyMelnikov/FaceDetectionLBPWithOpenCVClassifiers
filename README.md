@@ -16,4 +16,5 @@ With the [PrepareDataset.py](https://github.com/MatveyMelnikov/FaceDetectionLBPW
 
 
 ## Links
-* [OpenCV](https://github.com/opencv/opencv) - already trained classifiers and augmented implementation of the algorithm.
+* [OpenCV](https://github.com/opencv/opencv) - already trained classifiers and augmented implementation of the algorithm;
+* [faceldp](https://github.com/ek9852/faceldp) - cleaner and simpler implementation of LBP face detection than the original.
