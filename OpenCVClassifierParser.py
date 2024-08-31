@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 from Rectangle import Rectangle
-from HaarLikeFeature import HaarLikeFeature
+from LBPFeature import LBPFeature
 from Stage import Stage
 
 
@@ -48,7 +48,7 @@ class OpenCVClassifierParser:
 
         rect_parameters = rect.text.split()
 
-        return HaarLikeFeature(
+        return LBPFeature(
             Rectangle(
                 (int(rect_parameters[0]), int(rect_parameters[1])),
                 (int(rect_parameters[2]), int(rect_parameters[3]))

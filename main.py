@@ -16,11 +16,11 @@ def main():
 
     images = load_images(pos_testing_path)
     greyscale_images = convert_images_to_greyscale(images)
-    face_detector = FaceDetector("classifiers/lbpcascade_frontalface.xml")
+    face_detector = FaceDetector("classifiers/lbpcascade_frontalface_improved.xml")
 
     for image_index in range(0, len(greyscale_images)):
         print(f"Image: {image_index}")
-        faces = face_detector.detect(greyscale_images[image_index], 1.0, 1.1, 0.1, 3)
+        faces = face_detector.detect(greyscale_images[image_index], 1.0, 1.1, 0.1, 1)
         image = Image.fromarray(images[image_index])
 
         for face in faces:
